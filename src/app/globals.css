@@ -52,6 +52,20 @@
 
 /* Mobile-specific text rendering fixes */
 @media (max-width: 767px) {
+  /* Force system Arabic fonts on mobile - TTF not reliable on mobile browsers */
+  body,
+  .font-arabic,
+  .font-ui,
+  .font-mishafi,
+  [lang="ar"] {
+    font-family: -apple-system, 'SF Arabic', 'Geeza Pro', 'Noto Naskh Arabic', 'Droid Arabic Naskh', 'Tahoma', 'Arial', sans-serif !important;
+  }
+  
+  /* Headings can try custom font first, with strong fallbacks */
+  h1, h2, h3, .font-mishafi {
+    font-family: 'MishafiGold', -apple-system, 'SF Arabic', 'Geeza Pro', 'Noto Naskh Arabic', 'Tahoma', sans-serif !important;
+  }
+  
   /* Ensure proper Arabic text shaping on mobile */
   html {
     -webkit-text-size-adjust: 100%;
