@@ -20,7 +20,8 @@
        url('/fonts/mishafi-gold-regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
+  unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
 }
 
 /* Adobe Arabic - Arabic body text */
@@ -30,6 +31,7 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
 }
 
 /* Joumhouria - Arabic UI/tagline (fallback for Beirut) */
@@ -39,6 +41,7 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
 }
 
 * {
@@ -78,7 +81,7 @@ html, body {
 }
 
 body {
-  font-family: 'AdobeArabic', 'Segoe UI', Tahoma, sans-serif;
+  font-family: 'AdobeArabic', 'Geeza Pro', 'Arabic Typesetting', 'Simplified Arabic', 'Segoe UI', Tahoma, sans-serif;
   background-color: var(--bg);
   color: var(--primary);
   line-height: 1.8;
