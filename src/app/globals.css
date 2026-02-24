@@ -50,6 +50,30 @@
   margin: 0;
 }
 
+/* Mobile-specific text rendering fixes */
+@media (max-width: 767px) {
+  /* Ensure proper Arabic text shaping on mobile */
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Tabular numbers for prices/calories */
+  .price, .calories, [data-numeric] {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+  
+  /* Isolate LTR numbers in RTL context */
+  .num-ltr {
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: inline-block;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;

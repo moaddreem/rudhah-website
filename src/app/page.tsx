@@ -73,7 +73,7 @@ export default function HomePage() {
                 <h3 className="text-lg font-bold text-primary">{item.name_ar}</h3>
                 <p className="text-sm text-muted mt-1">{item.name_en}</p>
                 <div className="mt-4 pt-4 border-t border-muted/20">
-                  <p className="text-xl font-bold text-primary">{item.price} <span className="text-sm text-muted">ر.س</span></p>
+                  <p className="text-xl font-bold text-primary price" style={{ fontVariantNumeric: 'tabular-nums' }}><span dir="ltr" style={{ unicodeBidi: 'isolate' }}>{item.price}</span> <span className="text-sm text-muted">ر.س</span></p>
                 </div>
               </div>
             ))}

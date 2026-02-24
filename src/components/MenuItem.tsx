@@ -22,14 +22,16 @@ export default function MenuItem({ name_ar, name_en, price, calories, locale }: 
             {locale === 'ar' ? name_en : name_ar}
           </p>
           {calories && (
-            <p className="text-xs text-muted mt-1">
-              {calories} {t('cal', locale)}
+            <p className="text-xs text-muted mt-1 calories">
+              <span dir="ltr" style={{ unicodeBidi: 'isolate' }}>{calories}</span> {t('cal', locale)}
             </p>
           )}
         </div>
-        <div className="flex-shrink-0 text-end">
-          <span className="text-lg font-bold text-primary">{price}</span>
-          <span className="text-xs text-muted block">{t('sar', locale)}</span>
+        <div className="flex-shrink-0 text-end price" style={{ fontVariantNumeric: 'tabular-nums' }}>
+          <span className="text-lg font-bold text-primary">
+            <span dir="ltr" style={{ unicodeBidi: 'isolate' }}>{price}</span>
+          </span>
+          <span className="text-xs text-muted block">ر.س</span>
         </div>
       </div>
     </div>

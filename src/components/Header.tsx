@@ -81,42 +81,60 @@ export default function Header({ locale }: HeaderProps) {
         </div>
       </header>
 
-      {/* Mobile Menu Drawer */}
+      {/* Mobile Menu - Centered Modal Overlay */}
       <div
         className={`fixed inset-0 z-40 md:hidden transition-opacity duration-200 ${
           mobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
-        {/* Backdrop */}
+        {/* Dim Backdrop */}
         <div 
-          className="absolute inset-0 bg-black/50"
+          className="absolute inset-0 bg-black/60 backdrop-blur-sm"
           onClick={() => setMobileMenuOpen(false)}
         />
         
-        {/* Drawer */}
+        {/* Centered Modal Panel */}
         <div
-          className={`absolute top-14 ${isRTL ? 'right-0' : 'left-0'} w-64 bg-[#590D1A] border-t border-[#B38F6F]/20 transform transition-transform duration-200 ${
-            mobileMenuOpen ? 'translate-x-0' : (isRTL ? 'translate-x-full' : '-translate-x-full')
+          className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[420px] bg-[#F8F2E6] rounded-2xl shadow-2xl transform transition-all duration-200 ${
+            mobileMenuOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
           }`}
           dir={isRTL ? 'rtl' : 'ltr'}
         >
-          <nav className="flex flex-col py-3">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={getLocalizedPath(link.href, locale)}
-                onClick={() => setMobileMenuOpen(false)}
-                className={`px-5 py-3 text-[#F8F2E6] font-ui text-base transition-colors duration-200 hover:bg-[#B38F6F]/10 hover:text-[#B38F6F] ${
-                  isActive(link.href) ? 'text-[#B38F6F] bg-[#B38F6F]/10' : ''
-                }`}
-              >
-                {isRTL ? link.label_ar : link.label_en}
-              </Link>
-            ))}
-            <div className="px-5 py-3 border-t border-[#B38F6F]/20 mt-2">
+          {/* Close Button */}
+          <button
+            onClick={() => setMobileMenuOpen(false)}
+            className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-[#590D1A]/10 text-[#590D1A] hover:bg-[#590D1A]/20 transition-colors duration-150"
+            aria-label="Close menu"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+          {/* Menu Content */}
+          <div className="p-6 pt-16">
+            <nav className="flex flex-col gap-2">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={getLocalizedPath(link.href, locale)}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`flex items-center min-h-[48px] px-4 py-3 rounded-xl text-lg font-ui font-medium transition-colors duration-150 ${
+                    isActive(link.href) 
+                      ? 'bg-[#590D1A] text-[#F8F2E6]' 
+                      : 'text-[#590D1A] hover:bg-[#590D1A]/10'
+                  } ${isRTL ? 'text-right justify-end' : 'text-left justify-start'}`}
+                >
+                  {isRTL ? link.label_ar : link.label_en}
+                </Link>
+              ))}
+            </nav>
+            
+            {/* Language Toggle */}
+            <div className="mt-6 pt-4 border-t border-[#590D1A]/10 flex justify-center">
               <LanguageToggle locale={locale} />
             </div>
-          </nav>
+          </div>
         </div>
       </div>
     </>
