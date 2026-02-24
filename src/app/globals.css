@@ -16,12 +16,12 @@
 /* Mishafi Gold - Arabic display/headings only */
 @font-face {
   font-family: 'MishafiGold';
-  src: local('MishafiGold'),
-       url('/fonts/mishafi-gold-regular.ttf') format('truetype');
+  src: url('/fonts/Web Fonts/7d39006149fa1fb38ce32ed0d77006b0.woff2') format('woff2'),
+       url('/fonts/Web Fonts/7d39006149fa1fb38ce32ed0d77006b0.woff') format('woff'),
+       url('/fonts/Web Fonts/7d39006149fa1fb38ce32ed0d77006b0.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
 }
 
 /* Adobe Arabic - Arabic body text */
@@ -52,16 +52,15 @@
 
 /* Mobile-specific text rendering fixes */
 @media (max-width: 767px) {
-  /* Force system Arabic fonts on mobile - TTF not reliable on mobile browsers */
+  /* Use MishafiGold (now with WOFF2) with system fallbacks */
   body,
   .font-arabic,
   .font-ui,
-  .font-mishafi,
   [lang="ar"] {
-    font-family: -apple-system, 'SF Arabic', 'Geeza Pro', 'Noto Naskh Arabic', 'Droid Arabic Naskh', 'Tahoma', 'Arial', sans-serif !important;
+    font-family: 'MishafiGold', -apple-system, 'SF Arabic', 'Geeza Pro', 'Noto Naskh Arabic', 'Droid Arabic Naskh', 'Tahoma', sans-serif !important;
   }
   
-  /* Headings can try custom font first, with strong fallbacks */
+  /* Headings use MishafiGold */
   h1, h2, h3, .font-mishafi {
     font-family: 'MishafiGold', -apple-system, 'SF Arabic', 'Geeza Pro', 'Noto Naskh Arabic', 'Tahoma', sans-serif !important;
   }
