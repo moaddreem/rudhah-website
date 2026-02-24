@@ -1,0 +1,271 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #590D1A;
+  --accent: #B38F6F;
+  --bg: #F8F2E6;
+  --muted: #A18D7E;
+  --cream: #F5EDE4;
+  --header-h: 56px;
+  --tabs-h: 60px;
+  --scroll-offset: calc(var(--header-h) + var(--tabs-h) + 16px);
+}
+
+/* Mishafi Gold - Arabic display/headings only */
+@font-face {
+  font-family: 'MishafiGold';
+  src: local('MishafiGold'),
+       url('/fonts/mishafi-gold-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+/* Adobe Arabic - Arabic body text */
+@font-face {
+  font-family: 'AdobeArabic';
+  src: url('/fonts/Adobe Arabic Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Joumhouria - Arabic UI/tagline (fallback for Beirut) */
+@font-face {
+  font-family: 'Joumhouria';
+  src: url('/fonts/alfont_com_AlFont_com_joumhouria-1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: clip;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: 'AdobeArabic', 'Segoe UI', Tahoma, sans-serif;
+  background-color: var(--bg);
+  color: var(--primary);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* Balanced premium container - 1280px max */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+/* Section spacing */
+.section-padding {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="ltr"] {
+  text-align: left;
+}
+
+/* Smooth transitions - calm and premium */
+.transition-fade {
+  transition: opacity 150ms ease-in-out;
+}
+
+.transition-slide {
+  transition: transform 150ms ease-in-out, opacity 150ms ease-in-out;
+}
+
+/* Section reveal animation */
+.reveal-section {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+
+.reveal-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Button base styles - subtle premium transitions */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--bg);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #6d1120;
+  box-shadow: 0 2px 8px rgba(89, 13, 26, 0.2);
+}
+
+.btn-primary:focus-visible {
+  box-shadow: 0 0 0 3px var(--accent);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--accent);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 150ms ease-in-out, border-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+}
+
+.btn-secondary:hover {
+  background-color: var(--accent);
+  color: white;
+  box-shadow: 0 2px 8px rgba(179, 143, 111, 0.3);
+}
+
+.btn-secondary:focus-visible {
+  box-shadow: 0 0 0 3px var(--primary);
+}
+
+/* Card styles */
+.card {
+  background-color: var(--bg);
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(89, 13, 26, 0.08);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(89, 13, 26, 0.12);
+}
+
+/* Chip/Tab styles */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 200ms ease-in-out;
+  white-space: nowrap;
+}
+
+.chip-active {
+  background-color: var(--primary);
+  color: var(--bg);
+}
+
+.chip-inactive {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--muted);
+}
+
+.chip-inactive:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

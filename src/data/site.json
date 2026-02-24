@@ -1,0 +1,95 @@
+{
+  "cafe": {
+    "name_ar": "ردهه",
+    "name_en": "Rudhah",
+    "tagline_ar": "ما بين فنجان قهوة وركنٌ دافئ، تبدأ الحكايات وتُصنع الذكريات 📜",
+    "tagline_en": "A calm coffee experience in the heart of Abha"
+  },
+  "location": {
+    "city_ar": "أبها",
+    "city_en": "Abha",
+    "area_ar": "حي المفتاحة",
+    "area_en": "Al Miftaha District",
+    "context_ar": "شارع الفن",
+    "context_en": "Art Street",
+    "maps_link": "https://www.google.com/maps/place/Radha+Cafe/@21.3479034,38.4562732,7z/data=!4m6!3m5!1s0x15e35300125a194d:0x253a24a3cd004f91!8m2!3d18.2126226!4d42.4932888!16s%2Fg%2F11xgw5z4p8?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "hours": {
+    "weekdays": {
+      "days_ar": "السبت - الخميس",
+      "days_en": "Saturday - Thursday",
+      "open_ar": "7:00 صباحًا",
+      "open_en": "7:00 AM",
+      "close_ar": "12:00 صباحًا",
+      "close_en": "12:00 AM"
+    },
+    "friday": {
+      "day_ar": "الجمعة",
+      "day_en": "Friday",
+      "open_ar": "1:30 مساءً",
+      "open_en": "1:30 PM",
+      "close_ar": "2:00 صباحًا",
+      "close_en": "2:00 AM"
+    }
+  },
+  "contact": {
+    "whatsapp": {
+      "label_ar": "واتساب",
+      "label_en": "WhatsApp",
+      "link": null,
+      "placeholder": true
+    },
+    "instagram": {
+      "label_ar": "انستغرام",
+      "label_en": "Instagram",
+      "link": null,
+      "placeholder": true
+    },
+    "snapchat": {
+      "label_ar": "سناب شات",
+      "label_en": "Snapchat",
+      "link": null,
+      "placeholder": true
+    },
+    "tiktok": {
+      "label_ar": "تيك توك",
+      "label_en": "TikTok",
+      "link": null,
+      "placeholder": true
+    }
+  },
+  "delivery": {
+    "hungerstation": {
+      "label_ar": "هنقرستيشن",
+      "label_en": "HungerStation",
+      "link": null,
+      "placeholder": true
+    },
+    "keeta": {
+      "label_ar": "كيتا",
+      "label_en": "Keeta",
+      "link": null,
+      "placeholder": true
+    }
+  },
+  "testimonials": [
+    {
+      "text_ar": "أفضل قهوة في أبها، الأجواء رايقة والخدمة ممتازة",
+      "text_en": "Best coffee in Abha, calm atmosphere and excellent service",
+      "author_ar": "أحمد",
+      "author_en": "Ahmed"
+    },
+    {
+      "text_ar": "حلوياتهم لا تُقاوم، خصوصاً البيكان",
+      "text_en": "Their sweets are irresistible, especially the Pecan",
+      "author_ar": "سارة",
+      "author_en": "Sarah"
+    },
+    {
+      "text_ar": "المكان المثالي للعمل أو الاسترخاء",
+      "text_en": "The perfect place to work or relax",
+      "author_ar": "محمد",
+      "author_en": "Mohammed"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "categories": [
+    {
+      "id": "cold-drinks",
+      "category_ar": "المشروبات الباردة",
+      "category_en": "COLD DRINKS",
+      "items": [
+        { "name_ar": "ماتشا", "name_en": "Matcha", "price": 21, "calories": 90 },
+        { "name_ar": "امريكانو", "name_en": "Americano", "price": 14, "calories": 5 },
+        { "name_ar": "لاتيه", "name_en": "Latte", "price": 18, "calories": 120 },
+        { "name_ar": "ايس تي", "name_en": "Iced Tea", "price": 18, "calories": 90 },
+        { "name_ar": "كركديه", "name_en": "Hibiscus", "price": 18, "calories": 90 },
+        { "name_ar": "سبانش لاتيه", "name_en": "Spanish Latte", "price": 20, "calories": 280 },
+        { "name_ar": "عصير برتقال", "name_en": "Orange juice", "price": 10, "calories": 110 }
+      ]
+    },
+    {
+      "id": "hot-drinks",
+      "category_ar": "المشروبات الساخنة",
+      "category_en": "HOT DRINKS",
+      "items": [
+        { "name_ar": "لاتيه", "name_en": "Latte", "price": 17, "calories": 170 },
+        { "name_ar": "اسبريسو", "name_en": "Espresso", "price": 13, "calories": 5 },
+        { "name_ar": "امريكانو", "name_en": "Americano", "price": 13, "calories": 10 },
+        { "name_ar": "كورتادو", "name_en": "Cortado", "price": 14, "calories": 70 },
+        { "name_ar": "كابتشينو", "name_en": "Cappuccino", "price": 17, "calories": 150 },
+        { "name_ar": "فلات وايت", "name_en": "Flat White", "price": 15, "calories": 140 },
+        { "name_ar": "سبانش لاتيه", "name_en": "Spanish Latte", "price": 19, "calories": 280 }
+      ]
+    },
+    {
+      "id": "drip-coffee",
+      "category_ar": "القهوة المقطرة",
+      "category_en": "DRIP COFFEE",
+      "items": [
+        { "name_ar": "قهوة اليوم حار", "name_en": "Hot Coffee Day", "price": 12, "calories": 5 },
+        { "name_ar": "قهوة اليوم بارد", "name_en": "Iced Coffee Day", "price": 12, "calories": 5 },
+        { "name_ar": "Refill", "name_en": "Refill", "price": 8 },
+        { "name_ar": "V60 اثيوبي حار", "name_en": "V60 Ethiopian Hot", "price": 19, "calories": 5 },
+        { "name_ar": "V60 اثيوبي بارد", "name_en": "V60 Ethiopian Iced", "price": 20, "calories": 5 },
+        { "name_ar": "V60 كولومبي حار", "name_en": "V60 Colombian Hot", "price": 19, "calories": 5 },
+        { "name_ar": "V60 كولومبي بارد", "name_en": "V60 Colombian Iced", "price": 20, "calories": 5 },
+        { "name_ar": "V60 يمني فاخر حار", "name_en": "V60 Premium Yemeni Hot", "price": 24, "calories": 5 },
+        { "name_ar": "V60 يمني فاخر بارد", "name_en": "V60 Premium Yemeni Iced", "price": 25, "calories": 5 }
+      ]
+    },
+    {
+      "id": "sweets",
+      "category_ar": "الحلويات",
+      "category_en": "SWEETS",
+      "items": [
+        { "name_ar": "بيكان ردهه", "name_en": "Pecan Rudhah", "price": 26, "calories": 420 },
+        { "name_ar": "كرامبل تشوكلت", "name_en": "Crumble Chocolate", "price": 26, "calories": 520 },
+        { "name_ar": "ليمون تويست", "name_en": "Lemon Twist", "price": 24, "calories": 380 },
+        { "name_ar": "ترافل مانجو", "name_en": "Mango Truffle", "price": 25, "calories": 450 },
+        { "name_ar": "تيراميسو بيكان", "name_en": "Tiramisu Pecan", "price": 25, "calories": 390 },
+        { "name_ar": "كرانشي تشوكلت", "name_en": "Crunchy Chocolate", "price": 25, "calories": 450 }
+      ]
+    },
+    {
+      "id": "breakfast",
+      "category_ar": "الإفطار",
+      "category_en": "BREAKFAST",
+      "items": [
+        { "name_ar": "كرواسون حلوم", "name_en": "Halloumi Croissant", "price": 17, "calories": 182 },
+        { "name_ar": "كرواسون لوز", "name_en": "Almond Croissant", "price": 19, "calories": 210 },
+        { "name_ar": "كرواسون سادة", "name_en": "Plain Croissant", "price": 12, "calories": 165 },
+        { "name_ar": "دانش كرز", "name_en": "Cherry Danish", "price": 17, "calories": 195 },
+        { "name_ar": "دانش براونيز", "name_en": "Brownies Danish", "price": 18, "calories": 220 },
+        { "name_ar": "كيوب بيكان", "name_en": "Pecan Cube", "price": 19, "calories": 280 },
+        { "name_ar": "ساندوتش بوراتا", "name_en": "Burrata Sandwich", "price": 22, "calories": 280 },
+        { "name_ar": "ساندوتش تونا", "name_en": "Tuna Sandwich", "price": 20, "calories": 310 },
+        { "name_ar": "ساندوتش لبنه وزعتر", "name_en": "Labneh & Thyme Sandwich", "price": 18, "calories": 270 },
+        { "name_ar": "ساندوتش ديك رومي", "name_en": "Turkey Sandwich", "price": 27, "calories": 300 }
+      ]
+    },
+    {
+      "id": "winter",
+      "category_ar": "شتوية ردهه",
+      "category_en": "WINTER",
+      "items": [
+        { "name_ar": "ام علي", "name_en": "Umm Ali", "price": 19, "calories": 200 },
+        { "name_ar": "بودينق تمر", "name_en": "Date pudding", "price": 18, "calories": 520 },
+        { "name_ar": "كريم بروليه", "name_en": "Creme brulee", "price": 14, "calories": 168 },
+        { "name_ar": "هوت شوكلت", "name_en": "Hot chocolate", "price": 18, "calories": 420 }
+      ]
+    }
+  ]
+}

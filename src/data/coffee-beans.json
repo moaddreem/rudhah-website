@@ -1,0 +1,134 @@
+{
+  "beans": [
+    {
+      "id": "ethiopia-shelsheli",
+      "name_ar": "اثيوبيا شلشلي",
+      "name_en": "Ethiopia Shelsheli",
+      "origin_ar": "إثيوبيا",
+      "origin_en": "Ethiopia",
+      "region_ar": "شلشلي",
+      "region_en": "Shelsheli",
+      "variety_ar": "هيرلوم",
+      "variety_en": "Heirloom",
+      "flavor_notes_ar": "زهور، حمضيات، توت",
+      "flavor_notes_en": "Floral, Citrus, Berry",
+      "flavor_profile": ["fruity", "floral"],
+      "image": "/images/اثيوبيا شلشلي.png"
+    },
+    {
+      "id": "yemen-haraz",
+      "name_ar": "اليمن حراز",
+      "name_en": "Yemen Haraz",
+      "origin_ar": "اليمن",
+      "origin_en": "Yemen",
+      "region_ar": "حراز",
+      "region_en": "Haraz",
+      "variety_ar": "موكا",
+      "variety_en": "Mocha",
+      "flavor_notes_ar": "فواكه مجففة، توابل، عسل",
+      "flavor_notes_en": "Dried Fruit, Spice, Honey",
+      "flavor_profile": ["fruity", "spicy"],
+      "image": "/images/اليمن حراز.png"
+    },
+    {
+      "id": "indonesia-wanoja",
+      "name_ar": "اندونيسيا وانوجا",
+      "name_en": "Indonesia Wanoja",
+      "origin_ar": "إندونيسيا",
+      "origin_en": "Indonesia",
+      "region_ar": "وانوجا",
+      "region_en": "Wanoja",
+      "variety_ar": "جافا",
+      "variety_en": "Java",
+      "flavor_notes_ar": "شوكولاتة، توابل، أرضي",
+      "flavor_notes_en": "Chocolate, Spice, Earthy",
+      "flavor_profile": ["chocolatey", "spicy"],
+      "image": "/images/اندونيسيا وانوجا.png"
+    },
+    {
+      "id": "colombia-coconut",
+      "name_ar": "كولومبيا جوز الهند",
+      "name_en": "Colombia Coconut",
+      "origin_ar": "كولومبيا",
+      "origin_en": "Colombia",
+      "region_ar": "هويلا",
+      "region_en": "Huila",
+      "variety_ar": "كاتورا",
+      "variety_en": "Caturra",
+      "flavor_notes_ar": "جوز الهند، كراميل، حلو",
+      "flavor_notes_en": "Coconut, Caramel, Sweet",
+      "flavor_profile": ["nutty", "chocolatey"],
+      "image": "/images/كولومبيا جوز الهند.png"
+    },
+    {
+      "id": "colombia-strawberry",
+      "name_ar": "كولومبيا فراولة",
+      "name_en": "Colombia Strawberry",
+      "origin_ar": "كولومبيا",
+      "origin_en": "Colombia",
+      "region_ar": "نارينيو",
+      "region_en": "Nariño",
+      "variety_ar": "كاستيلو",
+      "variety_en": "Castillo",
+      "flavor_notes_ar": "فراولة، حمضيات، زهور",
+      "flavor_notes_en": "Strawberry, Citrus, Floral",
+      "flavor_profile": ["fruity", "floral"],
+      "image": "/images/كولومبيا فراولة.png"
+    },
+    {
+      "id": "el-salvador-chavi",
+      "name_ar": "السلفادور تشافي",
+      "name_en": "El Salvador Chavi",
+      "origin_ar": "السلفادور",
+      "origin_en": "El Salvador",
+      "region_ar": "تشافي",
+      "region_en": "Chavi",
+      "variety_ar": "باكامارا",
+      "variety_en": "Pacamara",
+      "flavor_notes_ar": "شوكولاتة، برتقال، عسل",
+      "flavor_notes_en": "Chocolate, Orange, Honey",
+      "flavor_profile": ["chocolatey", "fruity"],
+      "image": "/images/السلفادور تشافي.png"
+    },
+    {
+      "id": "adham-blend",
+      "name_ar": "أدهم",
+      "name_en": "Adham Blend",
+      "origin_ar": "خلطة خاصة",
+      "origin_en": "House Blend",
+      "region_ar": "ردهه",
+      "region_en": "Rudhah",
+      "variety_ar": "مزيج",
+      "variety_en": "Blend",
+      "flavor_notes_ar": "متوازن، غني، كريمي",
+      "flavor_notes_en": "Balanced, Rich, Creamy",
+      "flavor_profile": ["chocolatey", "nutty"],
+      "image": "/images/أدهم.jpg"
+    }
+  ],
+  "filters": {
+    "origins": [
+      { "id": "ethiopia", "name_ar": "إثيوبيا", "name_en": "Ethiopia" },
+      { "id": "colombia", "name_ar": "كولومبيا", "name_en": "Colombia" },
+      { "id": "yemen", "name_ar": "اليمن", "name_en": "Yemen" },
+      { "id": "indonesia", "name_ar": "إندونيسيا", "name_en": "Indonesia" },
+      { "id": "el-salvador", "name_ar": "السلفادور", "name_en": "El Salvador" },
+      { "id": "house", "name_ar": "خلطة خاصة", "name_en": "House Blend" }
+    ],
+    "flavor_profiles": [
+      { "id": "fruity", "name_ar": "فواكه", "name_en": "Fruity" },
+      { "id": "floral", "name_ar": "زهور", "name_en": "Floral" },
+      { "id": "chocolatey", "name_ar": "شوكولاتة", "name_en": "Chocolatey" },
+      { "id": "nutty", "name_ar": "مكسرات", "name_en": "Nutty" },
+      { "id": "spicy", "name_ar": "توابل", "name_en": "Spicy" },
+      { "id": "acidic", "name_ar": "حمضي", "name_en": "Acidic" }
+    ],
+    "varieties": [
+      { "id": "heirloom", "name_ar": "هيرلوم", "name_en": "Heirloom" },
+      { "id": "caturra", "name_ar": "كاتورا", "name_en": "Caturra" },
+      { "id": "mocha", "name_ar": "موكا", "name_en": "Mocha" },
+      { "id": "bourbon", "name_ar": "بوربون", "name_en": "Bourbon" },
+      { "id": "sl28", "name_ar": "SL28", "name_en": "SL28" }
+    ]
+  }
+}
