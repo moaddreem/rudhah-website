@@ -75,7 +75,7 @@ export default function HomePage() {
                   <img 
                     src="/images/logo.svg" 
                     alt="أيقونة الحلى" 
-                    className="w-10 h-10 object-contain"
+                    className="w-[52px] h-[52px] object-contain"
                   />
                 </div>
                 <h3 className="text-xl sm:text-lg font-bold text-primary">{item.name_ar}</h3>
