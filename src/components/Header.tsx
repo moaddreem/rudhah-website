@@ -114,6 +114,18 @@ export default function Header({ locale }: HeaderProps) {
           {/* Menu Content */}
           <div className="p-6 pt-16">
             <nav className="flex flex-col gap-2">
+              {/* Home link - mobile only */}
+              <Link
+                href={getLocalizedPath('/', locale)}
+                onClick={() => setMobileMenuOpen(false)}
+                className={`block w-full min-h-[48px] px-4 py-3 rounded-xl text-xl font-ui font-medium transition-colors duration-150 ${
+                  pathname === '/' || pathname === '/en'
+                    ? 'bg-[#590D1A] text-[#F8F2E6]' 
+                    : 'text-[#590D1A] hover:bg-[#590D1A]/10'
+                } ${isRTL ? 'text-right' : 'text-left'}`}
+              >
+                {isRTL ? 'الصفحة الرئيسية' : 'Home'}
+              </Link>
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
