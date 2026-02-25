@@ -132,12 +132,12 @@ export default function HomePage() {
               <div className="flex justify-center gap-8 text-base">
                 <div>
                   <p className="text-muted mb-1">{siteData.hours.weekdays.days_ar}</p>
-                  <p className="text-primary font-bold text-base">{siteData.hours.weekdays.open_ar} - {siteData.hours.weekdays.close_ar}</p>
+                  <p className="text-primary font-bold text-sm">{siteData.hours.weekdays.open_ar} - {siteData.hours.weekdays.close_ar}</p>
                 </div>
                 <div className="w-px bg-muted/30"></div>
                 <div>
                   <p className="text-muted mb-1">{siteData.hours.friday.day_ar}</p>
-                  <p className="text-primary font-bold text-base">{siteData.hours.friday.open_ar} - {siteData.hours.friday.close_ar}</p>
+                  <p className="text-primary font-bold text-sm">{siteData.hours.friday.open_ar} - {siteData.hours.friday.close_ar}</p>
                 </div>
               </div>
             </div>
