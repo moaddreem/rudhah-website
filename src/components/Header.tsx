@@ -15,6 +15,7 @@ const navLinks = [
   { href: '/menu', label_ar: 'المنيو', label_en: 'Menu' },
   { href: '/coffee', label_ar: 'قائمة البن', label_en: 'Coffee Origins' },
   { href: '/location', label_ar: 'الموقع', label_en: 'Location' },
+  { href: '/contact', label_ar: 'حساباتنا', label_en: 'Our Accounts' },
 ];
 
 export default function Header({ locale }: HeaderProps) {
