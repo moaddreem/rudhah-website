@@ -164,7 +164,7 @@ export default function HomePageEN() {
       <footer className="bg-primary text-bg py-12 md:py-16">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Logo locale={locale} size="md" variant="light" />
-          <p className="text-accent mt-4 mb-6">{siteData.cafe.tagline_en}</p>
+          <p className="text-accent mt-4 mb-6">A calm coffee experience in the heart of Abha</p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             <Link href="/en/menu" className="text-bg/80 hover:text-accent transition-colors font-medium">Menu</Link>
             <Link href="/en/coffee" className="text-bg/80 hover:text-accent transition-colors font-medium">Coffee</Link>
