@@ -132,12 +132,12 @@ export default function HomePageEN() {
               <div className="flex justify-center gap-8 text-base">
                 <div>
                   <p className="text-muted mb-1">{siteData.hours.weekdays.days_en}</p>
-                  <p className="text-primary font-bold text-lg">{siteData.hours.weekdays.open_en} - {siteData.hours.weekdays.close_en}</p>
+                  <p className="text-primary font-bold text-base">{siteData.hours.weekdays.open_en} - {siteData.hours.weekdays.close_en}</p>
                 </div>
                 <div className="w-px bg-muted/30"></div>
                 <div>
                   <p className="text-muted mb-1">{siteData.hours.friday.day_en}</p>
-                  <p className="text-primary font-bold text-lg">{siteData.hours.friday.open_en} - {siteData.hours.friday.close_en}</p>
+                  <p className="text-primary font-bold text-base">{siteData.hours.friday.open_en} - {siteData.hours.friday.close_en}</p>
                 </div>
               </div>
             </div>
