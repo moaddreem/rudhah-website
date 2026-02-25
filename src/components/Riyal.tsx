@@ -9,8 +9,13 @@ export default function Riyal({ className = '' }: RiyalProps) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1124.14 1256.39"
-      className={`inline-block h-[0.9em] w-auto align-baseline ${className}`}
-      style={{ marginInlineStart: '4px' }}
+      className={`inline h-[0.85em] w-auto ${className}`}
+      style={{ 
+        marginInlineStart: '4px',
+        verticalAlign: 'baseline',
+        position: 'relative',
+        top: '0.05em'
+      }}
       aria-label="ريال سعودي"
       role="img"
     >

@@ -74,7 +74,7 @@ export default function HomePageEN() {
                 <h3 className="text-lg font-bold text-primary">{item.name_en}</h3>
                 <p className="text-sm text-muted mt-1">{item.name_ar}</p>
                 <div className="mt-4 pt-4 border-t border-muted/20">
-                  <p className="text-xl font-bold text-primary price" style={{ fontVariantNumeric: 'tabular-nums' }}>{item.price}<Riyal /></p>
+                  <p className="text-2xl font-bold text-primary price" style={{ fontVariantNumeric: 'tabular-nums' }}>{item.price}<Riyal /></p>
                 </div>
               </div>
             ))}
