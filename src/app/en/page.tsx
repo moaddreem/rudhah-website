@@ -184,7 +184,7 @@ export default function HomePageEN() {
             <Link href="/en/menu" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">Menu</Link>
             <Link href="/en/coffee" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">Coffee</Link>
             <Link href="/en/location" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">Location</Link>
-            <Link href="/en/contact" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">Contact</Link>
+            <Link href="/en/contact" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">Our Accounts</Link>
           </div>
           <div className="w-24 h-px bg-bg/20 mx-auto mb-6"></div>
           <p className="text-bg/50 text-sm">© 2026 Rudhah. All rights reserved.</p>

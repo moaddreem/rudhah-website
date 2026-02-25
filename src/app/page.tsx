@@ -184,7 +184,7 @@ export default function HomePage() {
             <Link href="/menu" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">المنيو</Link>
             <Link href="/coffee" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">قائمة البن</Link>
             <Link href="/location" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">الموقع</Link>
-            <Link href="/contact" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">تواصل</Link>
+            <Link href="/contact" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">حساباتنا</Link>
           </div>
           <div className="w-24 h-px bg-bg/20 mx-auto mb-6"></div>
           <p className="text-bg/50 text-sm">© 2026 ردهه. جميع الحقوق محفوظة.</p>
