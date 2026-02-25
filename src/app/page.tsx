@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Logo from '@/components/Logo';
 import DeliveryAppsSection from '@/components/DeliveryAppsSection';
+import Riyal from '@/components/Riyal';
 import menuData from '@/data/menu.json';
 import siteData from '@/data/site.json';
 
@@ -73,7 +74,7 @@ export default function HomePage() {
                 <h3 className="text-lg font-bold text-primary">{item.name_ar}</h3>
                 <p className="text-sm text-muted mt-1">{item.name_en}</p>
                 <div className="mt-4 pt-4 border-t border-muted/20">
-                  <p className="text-xl font-bold text-primary price" style={{ fontVariantNumeric: 'tabular-nums' }}><span dir="ltr" style={{ unicodeBidi: 'isolate' }}>{item.price}</span> <span className="text-sm text-muted">ر.س</span></p>
+                  <p className="text-xl font-bold text-primary price" style={{ fontVariantNumeric: 'tabular-nums' }}><span dir="ltr" style={{ unicodeBidi: 'isolate' }}>{item.price}</span><Riyal /></p>
                 </div>
               </div>
             ))}

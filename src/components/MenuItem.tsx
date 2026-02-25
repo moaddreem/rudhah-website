@@ -1,6 +1,7 @@
 'use client';
 
 import { Locale, t } from '@/lib/i18n';
+import Riyal from './Riyal';
 
 interface MenuItemProps {
   name_ar: string;
@@ -30,8 +31,8 @@ export default function MenuItem({ name_ar, name_en, price, calories, locale }: 
         <div className="flex-shrink-0 text-end price" style={{ fontVariantNumeric: 'tabular-nums' }}>
           <span className="text-lg font-bold text-primary">
             <span dir="ltr" style={{ unicodeBidi: 'isolate' }}>{price}</span>
+            <Riyal />
           </span>
-          <span className="text-xs text-muted block">ر.س</span>
         </div>
       </div>
     </div>
