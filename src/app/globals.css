@@ -52,7 +52,7 @@
 
 /* Mobile-specific text rendering fixes */
 @media (max-width: 767px) {
-  /* Use Mishafi Gold Regular (WOFF2) on mobile with system fallbacks */
+  /* Use Mishafi Gold with Google Arabic fonts as fallback */
   body,
   h1, h2, h3, h4, h5, h6,
   p, span, a, button, input, select, textarea,
@@ -60,7 +60,11 @@
   .font-ui,
   .font-mishafi,
   [lang="ar"] {
-    font-family: 'Mishafi Gold Regular', 'Geeza Pro', -apple-system, 'SF Arabic', 'Noto Naskh Arabic', 'Tahoma', sans-serif !important;
+    font-family: 'Mishafi Gold Regular', 'Amiri', 'Tajawal', 'Geeza Pro', -apple-system, sans-serif !important;
+    /* Enable Arabic ligatures and proper text shaping */
+    font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
+    -webkit-font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
+    text-rendering: optimizeLegibility;
   }
   
   /* Ensure proper Arabic text shaping on mobile */
