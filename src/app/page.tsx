@@ -166,10 +166,10 @@ export default function HomePage() {
           <Logo locale={locale} size="md" variant="light" />
           <p className="text-accent mt-4 mb-6">قهوة رايقة في قلب أبها</p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
-            <Link href="/menu" className="text-bg/80 hover:text-accent transition-colors font-medium">المنيو</Link>
-            <Link href="/coffee" className="text-bg/80 hover:text-accent transition-colors font-medium">قائمة البن</Link>
-            <Link href="/location" className="text-bg/80 hover:text-accent transition-colors font-medium">الموقع</Link>
-            <Link href="/contact" className="text-bg/80 hover:text-accent transition-colors font-medium">تواصل</Link>
+            <Link href="/menu" className="text-bg/80 hover:text-accent transition-colors font-medium text-lg">المنيو</Link>
+            <Link href="/coffee" className="text-bg/80 hover:text-accent transition-colors font-medium text-lg">قائمة البن</Link>
+            <Link href="/location" className="text-bg/80 hover:text-accent transition-colors font-medium text-lg">الموقع</Link>
+            <Link href="/contact" className="text-bg/80 hover:text-accent transition-colors font-medium text-lg">تواصل</Link>
           </div>
           <div className="w-24 h-px bg-bg/20 mx-auto mb-6"></div>
           <p className="text-bg/50 text-sm">© 2026 ردهه. جميع الحقوق محفوظة.</p>

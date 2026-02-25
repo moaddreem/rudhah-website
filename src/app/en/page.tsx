@@ -166,10 +166,10 @@ export default function HomePageEN() {
           <Logo locale={locale} size="md" variant="light" />
           <p className="text-accent mt-4 mb-6">A calm coffee experience in the heart of Abha</p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
-            <Link href="/en/menu" className="text-bg/80 hover:text-accent transition-colors font-medium">Menu</Link>
-            <Link href="/en/coffee" className="text-bg/80 hover:text-accent transition-colors font-medium">Coffee</Link>
-            <Link href="/en/location" className="text-bg/80 hover:text-accent transition-colors font-medium">Location</Link>
-            <Link href="/en/contact" className="text-bg/80 hover:text-accent transition-colors font-medium">Contact</Link>
+            <Link href="/en/menu" className="text-bg/80 hover:text-accent transition-colors font-medium text-lg">Menu</Link>
+            <Link href="/en/coffee" className="text-bg/80 hover:text-accent transition-colors font-medium text-lg">Coffee</Link>
+            <Link href="/en/location" className="text-bg/80 hover:text-accent transition-colors font-medium text-lg">Location</Link>
+            <Link href="/en/contact" className="text-bg/80 hover:text-accent transition-colors font-medium text-lg">Contact</Link>
           </div>
           <div className="w-24 h-px bg-bg/20 mx-auto mb-6"></div>
           <p className="text-bg/50 text-sm">© 2026 Rudhah. All rights reserved.</p>
