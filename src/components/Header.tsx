@@ -119,11 +119,11 @@ export default function Header({ locale }: HeaderProps) {
                   key={link.href}
                   href={getLocalizedPath(link.href, locale)}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`flex items-center min-h-[48px] px-4 py-3 rounded-xl text-xl font-ui font-medium transition-colors duration-150 ${
+                  className={`block w-full min-h-[48px] px-4 py-3 rounded-xl text-xl font-ui font-medium transition-colors duration-150 ${
                     isActive(link.href) 
                       ? 'bg-[#590D1A] text-[#F8F2E6]' 
                       : 'text-[#590D1A] hover:bg-[#590D1A]/10'
-                  } ${isRTL ? 'text-right justify-end' : 'text-left justify-start'}`}
+                  } ${isRTL ? 'text-right' : 'text-left'}`}
                 >
                   {isRTL ? link.label_ar : link.label_en}
                 </Link>
