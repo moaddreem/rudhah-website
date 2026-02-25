@@ -57,22 +57,22 @@ export default function HomePageEN() {
       <section className="py-10 md:py-16 bg-cream">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <span className="text-accent text-sm font-ui tracking-wider">From Our Menu</span>
-            <h2 className="text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
+            <span className="text-accent text-sm sm:text-base font-ui tracking-wider">From Our Menu</span>
+            <h2 className="text-2xl sm:text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
               Featured Sweets
             </h2>
             <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5">
             {sweets.map((item, index) => (
-              <div key={index} className="bg-bg rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+              <div key={index} className="bg-bg rounded-xl p-4 sm:p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                 <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-primary/10 to-accent/20 flex items-center justify-center">
                   <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0A1.75 1.75 0 013 15.546V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v8.046z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-primary">{item.name_en}</h3>
-                <p className="text-sm text-muted mt-1">{item.name_ar}</p>
+                <h3 className="text-base sm:text-lg font-bold text-primary">{item.name_en}</h3>
+                <p className="text-xs sm:text-sm text-muted mt-1">{item.name_ar}</p>
                 <div className="mt-4 pt-4 border-t border-muted/20">
                   <p className="text-2xl font-bold text-primary price" style={{ fontVariantNumeric: 'tabular-nums' }}>{item.price}<Riyal /></p>
                 </div>
@@ -86,8 +86,8 @@ export default function HomePageEN() {
       <section className="py-10 md:py-16">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <span className="text-accent text-sm font-ui tracking-wider">What They Say</span>
-            <h2 className="text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
+            <span className="text-accent text-sm sm:text-base font-ui tracking-wider">What They Say</span>
+            <h2 className="text-2xl sm:text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
               Testimonials
             </h2>
             <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded-full"></div>

@@ -73,7 +73,7 @@
 }
 
 /* Mobile-specific text rendering fixes */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* Ensure proper Arabic text shaping on mobile */
   html {
     -webkit-text-size-adjust: 100%;
@@ -93,6 +93,19 @@
     direction: ltr;
     unicode-bidi: isolate;
     display: inline-block;
+  }
+  
+  /* Mobile typography - increase font sizes for sections after hero */
+  .mobile-section-heading {
+    font-size: 1.75rem !important;
+  }
+  
+  .mobile-card-title {
+    font-size: 1.125rem !important;
+  }
+  
+  .mobile-card-subtitle {
+    font-size: 0.9375rem !important;
   }
 }
 

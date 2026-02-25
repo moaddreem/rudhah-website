@@ -46,11 +46,11 @@ export default function DeliveryAppsSection({ locale }: DeliveryAppsSectionProps
         </div>
 
         {/* App Cards */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-6 max-w-lg mx-auto">
+        <div className="grid grid-cols-2 sm:flex sm:flex-row justify-center items-center gap-4 sm:gap-6 max-w-lg mx-auto">
           {deliveryApps.map((app) => (
             <div
               key={app.id}
-              className="w-full sm:w-48 bg-cream rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-1 hover:border-accent/30 border border-transparent cursor-default"
+              className="w-full sm:w-48 bg-cream rounded-xl p-4 sm:p-6 shadow-sm hover:shadow-lg transition-all duration-200 ease-out hover:-translate-y-1 hover:border-accent/30 border border-transparent cursor-default"
             >
               {/* Logo */}
               <div className="relative w-full h-16 mb-4">
