@@ -72,9 +72,11 @@ export default function HomePageEN() {
             {sweets.map((item, index) => (
               <div key={index} className="bg-bg rounded-xl p-4 sm:p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                 <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-primary/10 to-accent/20 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0A1.75 1.75 0 013 15.546V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v8.046z" />
-                  </svg>
+                  <img 
+                    src="/images/logo.svg" 
+                    alt="Dessert icon" 
+                    className="w-10 h-10 object-contain"
+                  />
                 </div>
                 <h3 className="text-xl sm:text-lg font-bold text-primary">{item.name_en}</h3>
                 <p className="text-base sm:text-sm text-muted mt-1">{item.name_ar}</p>
