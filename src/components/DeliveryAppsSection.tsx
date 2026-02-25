@@ -30,13 +30,13 @@ export default function DeliveryAppsSection({ locale }: DeliveryAppsSectionProps
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-10">
-          <span className="text-accent text-sm font-ui tracking-wider">
+          <span className="text-lg sm:text-sm md:text-base font-ui tracking-wider text-accent">
             {isRTL ? 'تطبيقات التوصيل' : 'Delivery Apps'}
           </span>
-          <h2 className="text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
+          <h2 className="text-[2rem] sm:text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
             {isRTL ? 'طلبك يوصل لين بابك' : 'Delivery to your door'}
           </h2>
-          <p className="text-muted mt-3 max-w-md mx-auto">
+          <p className="text-muted mt-3 max-w-md mx-auto text-base sm:text-sm">
             {isRTL 
               ? 'خدمة التوصيل متاحة الآن عبر تطبيقات: هنقرستيشن، وكيتا.'
               : 'Delivery is now available through: HungerStation and Keeta.'

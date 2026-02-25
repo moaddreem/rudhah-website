@@ -110,8 +110,8 @@ export default function HomePageEN() {
       <section className="py-10 md:py-16 bg-cream">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="text-center mb-10">
-            <span className="text-accent text-sm font-ui tracking-wider">Visit Us</span>
-            <h2 className="text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
+            <span className="text-lg sm:text-sm md:text-base font-ui tracking-wider text-accent">Visit Us</span>
+            <h2 className="text-[2rem] sm:text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
               Location & Hours
             </h2>
             <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
