@@ -103,7 +103,7 @@ export default function Header({ locale }: HeaderProps) {
           {/* Close Button */}
           <button
             onClick={() => setMobileMenuOpen(false)}
-            className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-[#590D1A]/10 text-[#590D1A] hover:bg-[#590D1A]/20 transition-colors duration-150"
+            className={`absolute top-4 ${isRTL ? 'left-4' : 'right-4'} w-10 h-10 flex items-center justify-center rounded-full bg-[#590D1A]/10 text-[#590D1A] hover:bg-[#590D1A]/20 transition-colors duration-150`}
             aria-label="Close menu"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
