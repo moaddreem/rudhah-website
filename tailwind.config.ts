@@ -16,9 +16,9 @@ const config: Config = {
         cream: '#F5EDE4',
       },
       fontFamily: {
-        mishafi: ['MishafiGold', 'Geeza Pro', 'Arabic Typesetting', 'Simplified Arabic', 'sans-serif'],
-        arabic: ['AdobeArabic', 'Geeza Pro', 'Arabic Typesetting', 'Simplified Arabic', 'sans-serif'],
-        ui: ['Joumhouria', 'Geeza Pro', 'Arabic Typesetting', 'Simplified Arabic', 'sans-serif'],
+        mishafi: ['Mishafi Gold Regular', 'Geeza Pro', 'Noto Naskh Arabic', 'Tahoma', 'sans-serif'],
+        arabic: ['Mishafi Gold Regular', 'Geeza Pro', 'Noto Naskh Arabic', 'Tahoma', 'sans-serif'],
+        ui: ['Mishafi Gold Regular', 'Geeza Pro', 'Noto Naskh Arabic', 'Tahoma', 'sans-serif'],
       },
       fontSize: {
         'heading-xl': ['2.5rem', { lineHeight: '1.2' }],
