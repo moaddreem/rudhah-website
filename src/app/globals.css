@@ -13,12 +13,11 @@
   --scroll-offset: calc(var(--header-h) + var(--tabs-h) + 16px);
 }
 
-/* Mishafi Gold - Arabic display/headings only */
+/* Mishafi Gold - Arabic display/headings - DESKTOP ONLY */
 @font-face {
   font-family: 'MishafiGold';
-  src: url('/fonts/Web Fonts/7d39006149fa1fb38ce32ed0d77006b0.woff2') format('woff2'),
-       url('/fonts/Web Fonts/7d39006149fa1fb38ce32ed0d77006b0.woff') format('woff'),
-       url('/fonts/Web Fonts/7d39006149fa1fb38ce32ed0d77006b0.ttf') format('truetype');
+  src: local('MishafiGold'),
+       url('/fonts/mishafi-gold-regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -52,17 +51,16 @@
 
 /* Mobile-specific text rendering fixes */
 @media (max-width: 767px) {
-  /* Use MishafiGold (now with WOFF2) with system fallbacks */
+  /* Force ONLY system Arabic fonts on mobile - custom fonts don't work reliably */
   body,
+  h1, h2, h3, h4, h5, h6,
+  p, span, a, button, input, select, textarea,
   .font-arabic,
   .font-ui,
-  [lang="ar"] {
-    font-family: 'MishafiGold', -apple-system, 'SF Arabic', 'Geeza Pro', 'Noto Naskh Arabic', 'Droid Arabic Naskh', 'Tahoma', sans-serif !important;
-  }
-  
-  /* Headings use MishafiGold */
-  h1, h2, h3, .font-mishafi {
-    font-family: 'MishafiGold', -apple-system, 'SF Arabic', 'Geeza Pro', 'Noto Naskh Arabic', 'Tahoma', sans-serif !important;
+  .font-mishafi,
+  [lang="ar"],
+  * {
+    font-family: 'Geeza Pro', -apple-system, 'SF Arabic', 'Noto Naskh Arabic', 'Droid Arabic Naskh', 'Tahoma', 'Arial', sans-serif !important;
   }
   
   /* Ensure proper Arabic text shaping on mobile */
