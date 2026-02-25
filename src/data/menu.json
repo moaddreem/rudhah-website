@@ -35,7 +35,6 @@
       "items": [
         { "name_ar": "قهوة اليوم حار", "name_en": "Hot Coffee Day", "price": 12, "calories": 5 },
         { "name_ar": "قهوة اليوم بارد", "name_en": "Iced Coffee Day", "price": 12, "calories": 5 },
-        { "name_ar": "Refill", "name_en": "Refill", "price": 8 },
         { "name_ar": "V60 اثيوبي حار", "name_en": "V60 Ethiopian Hot", "price": 19, "calories": 5 },
         { "name_ar": "V60 اثيوبي بارد", "name_en": "V60 Ethiopian Iced", "price": 20, "calories": 5 },
         { "name_ar": "V60 كولومبي حار", "name_en": "V60 Colombian Hot", "price": 19, "calories": 5 },
