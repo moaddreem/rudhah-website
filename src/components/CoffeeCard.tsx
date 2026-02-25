@@ -21,14 +21,13 @@ interface CoffeeBean {
 interface CoffeeCardProps {
   bean: CoffeeBean;
   locale: Locale;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
-export default function CoffeeCard({ bean, locale, onClick }: CoffeeCardProps) {
+export default function CoffeeCard({ bean, locale }: CoffeeCardProps) {
   return (
-    <button
-      onClick={onClick}
-      className="card overflow-hidden text-start w-full transition-transform duration-200 hover:scale-[1.02] focus:scale-[1.02]"
+    <div
+      className="card overflow-hidden text-start w-full transition-all duration-200 hover:shadow-lg"
     >
       {/* Image - using uploaded coffee origin images */}
       <div className="aspect-[4/3] relative bg-gradient-to-br from-primary/20 to-accent/30 overflow-hidden">
@@ -65,6 +64,6 @@ export default function CoffeeCard({ bean, locale, onClick }: CoffeeCardProps) {
           {locale === 'ar' ? bean.flavor_notes_ar : bean.flavor_notes_en}
         </p>
       </div>
-    </button>
+    </div>
   );
 }

@@ -1,30 +1,9 @@
-'use client';
-
-import { useState } from 'react';
 import Header from '@/components/Header';
 import CoffeeCard from '@/components/CoffeeCard';
-import CoffeeModal from '@/components/CoffeeModal';
 import coffeeData from '@/data/coffee-beans.json';
-
-interface CoffeeBean {
-  id: string;
-  name_ar: string;
-  name_en: string;
-  origin_ar: string;
-  origin_en: string;
-  region_ar: string;
-  region_en: string;
-  variety_ar: string;
-  variety_en: string;
-  flavor_notes_ar: string;
-  flavor_notes_en: string;
-  flavor_profile: string[];
-  image: string;
-}
 
 export default function CoffeePageEN() {
   const locale = 'en';
-  const [selectedBean, setSelectedBean] = useState<CoffeeBean | null>(null);
 
   return (
     <div className="min-h-screen">
@@ -50,19 +29,10 @@ export default function CoffeePageEN() {
               key={bean.id}
               bean={bean}
               locale={locale}
-              onClick={() => setSelectedBean(bean)}
             />
           ))}
         </div>
       </main>
-
-      {selectedBean && (
-        <CoffeeModal
-          bean={selectedBean}
-          locale={locale}
-          onClose={() => setSelectedBean(null)}
-        />
-      )}
     </div>
   );
 }
