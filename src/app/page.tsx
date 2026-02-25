@@ -1,8 +1,11 @@
+'use client';
+
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Logo from '@/components/Logo';
 import DeliveryAppsSection from '@/components/DeliveryAppsSection';
 import Riyal from '@/components/Riyal';
+import FadeIn from '@/components/FadeIn';
 import menuData from '@/data/menu.json';
 import siteData from '@/data/site.json';
 
@@ -56,13 +59,15 @@ export default function HomePage() {
       {/* Featured Sweets */}
       <section className="py-10 md:py-16 bg-cream">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <span className="text-lg sm:text-sm md:text-base font-ui tracking-wider text-accent">من قائمتنا</span>
-            <h2 className="text-[2rem] sm:text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
-              أبرز الحلويات
-            </h2>
-            <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
-          </div>
+          <FadeIn>
+            <div className="text-center mb-10">
+              <span className="text-lg sm:text-sm md:text-base font-ui tracking-wider text-accent">من قائمتنا</span>
+              <h2 className="text-[2rem] sm:text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
+                أبرز الحلويات
+              </h2>
+              <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+          </FadeIn>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5">
             {sweets.map((item, index) => (
               <div key={index} className="bg-bg rounded-xl p-4 sm:p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
@@ -85,38 +90,45 @@ export default function HomePage() {
       {/* Testimonials */}
       <section className="py-10 md:py-16">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <span className="text-lg sm:text-sm md:text-base font-ui tracking-wider text-accent">ماذا يقولون</span>
-            <h2 className="text-[2rem] sm:text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
-              آراء العملاء
-            </h2>
-            <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {siteData.testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-cream rounded-xl p-6 relative">
-                <svg className="w-8 h-8 text-accent/30 absolute top-4 right-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                </svg>
-                <p className="text-primary mb-4 leading-relaxed text-lg sm:text-base">"{testimonial.text_ar}"</p>
-                <p className="text-accent font-bold text-base sm:text-sm">— {testimonial.author_ar}</p>
-              </div>
-            ))}
-          </div>
+          <FadeIn>
+            <div className="text-center mb-10">
+              <span className="text-lg sm:text-sm md:text-base font-ui tracking-wider text-accent">ماذا يقولون</span>
+              <h2 className="text-[2rem] sm:text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
+                آراء العملاء
+              </h2>
+              <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+          </FadeIn>
+          <FadeIn delay={100}>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              {siteData.testimonials.map((testimonial, index) => (
+                <div key={index} className="bg-cream rounded-xl p-6 relative">
+                  <svg className="w-8 h-8 text-accent/30 absolute top-4 right-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                  </svg>
+                  <p className="text-primary mb-4 leading-relaxed text-lg sm:text-base">"{testimonial.text_ar}"</p>
+                  <p className="text-accent font-bold text-base sm:text-sm">— {testimonial.author_ar}</p>
+                </div>
+              ))}
+            </div>
+          </FadeIn>
         </div>
       </section>
 
       {/* Location & Hours */}
       <section className="py-10 md:py-16 bg-cream">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="text-center mb-10">
-            <span className="text-lg sm:text-sm md:text-base font-ui tracking-wider text-accent">زورونا</span>
-            <h2 className="text-[2rem] sm:text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
-              الموقع وساعات العمل
-            </h2>
-            <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
-          </div>
-          <div className="bg-bg rounded-xl p-8 shadow-sm max-w-2xl mx-auto">
+          <FadeIn>
+            <div className="text-center mb-10">
+              <span className="text-lg sm:text-sm md:text-base font-ui tracking-wider text-accent">زورونا</span>
+              <h2 className="text-[2rem] sm:text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
+                الموقع وساعات العمل
+              </h2>
+              <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+          </FadeIn>
+          <FadeIn delay={100}>
+            <div className="bg-bg rounded-xl p-8 shadow-sm max-w-2xl mx-auto">
             <div className="w-14 h-14 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
               <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -153,7 +165,8 @@ export default function HomePage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
             </a>
-          </div>
+            </div>
+          </FadeIn>
         </div>
       </section>
 

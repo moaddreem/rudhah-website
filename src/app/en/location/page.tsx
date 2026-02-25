@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import Header from '@/components/Header';
+import FadeIn from '@/components/FadeIn';
 import siteData from '@/data/site.json';
 
 export default function LocationPageEN() {
@@ -14,7 +17,8 @@ export default function LocationPageEN() {
           Location
         </h1>
 
-        <div className="card p-8 text-center">
+        <FadeIn>
+          <div className="card p-8 text-center">
           <div className="mb-8">
             <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-accent/20 flex items-center justify-center">
               <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,19 +65,22 @@ export default function LocationPageEN() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </a>
-        </div>
-
-        <div className="mt-8 card overflow-hidden">
-          <div className="relative aspect-square">
-            <Image
-              src="/images/loca.jpg"
-              alt="Rudhah Location"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 672px"
-            />
           </div>
-        </div>
+        </FadeIn>
+
+        <FadeIn delay={100}>
+          <div className="mt-8 card overflow-hidden">
+            <div className="relative aspect-square">
+              <Image
+                src="/images/loca.jpg"
+                alt="Rudhah Location"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 672px"
+              />
+            </div>
+          </div>
+        </FadeIn>
       </main>
     </div>
   );

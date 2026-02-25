@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import Header from '@/components/Header';
+import FadeIn from '@/components/FadeIn';
 import siteData from '@/data/site.json';
 
 export default function LocationPage() {
@@ -22,7 +25,8 @@ export default function LocationPage() {
       </section>
 
       <main className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="bg-cream rounded-xl p-8 text-center shadow-sm max-w-2xl mx-auto">
+        <FadeIn>
+          <div className="bg-cream rounded-xl p-8 text-center shadow-sm max-w-2xl mx-auto">
           {/* Location Info */}
           <div className="mb-6">
             <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-accent/20 flex items-center justify-center">
@@ -73,10 +77,12 @@ export default function LocationPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </a>
-        </div>
+          </div>
+        </FadeIn>
 
         {/* Location Photo */}
-        <div className="mt-8 rounded-xl overflow-hidden shadow-sm max-w-2xl mx-auto">
+        <FadeIn delay={100}>
+          <div className="mt-8 rounded-xl overflow-hidden shadow-sm max-w-2xl mx-auto">
           <div className="relative aspect-square">
             <Image
               src="/images/loca.jpg"
@@ -86,7 +92,8 @@ export default function LocationPage() {
               sizes="(max-width: 768px) 100vw, 672px"
             />
           </div>
-        </div>
+          </div>
+        </FadeIn>
       </main>
     </div>
   );

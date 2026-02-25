@@ -1,4 +1,7 @@
+'use client';
+
 import Header from '@/components/Header';
+import FadeIn from '@/components/FadeIn';
 import siteData from '@/data/site.json';
 
 export default function ContactPageEN() {
@@ -25,41 +28,45 @@ export default function ContactPageEN() {
           Contact Us
         </h1>
 
-        <section className="mb-12">
-          <h2 className="text-xl font-bold text-primary mb-6 flex items-center gap-3">
-            <span className="w-8 h-0.5 bg-accent"></span>
-            Social Media
-          </h2>
-          <div className="grid grid-cols-2 gap-4">
-            {socialLinks.map((social) => (
-              <ContactCard
-                key={social.key}
-                icon={social.icon}
-                label={social.data.label_en}
-                link={social.data.link}
-                placeholder={social.data.placeholder}
-              />
-            ))}
-          </div>
-        </section>
+        <FadeIn>
+          <section className="mb-12">
+            <h2 className="text-xl font-bold text-primary mb-6 flex items-center gap-3">
+              <span className="w-8 h-0.5 bg-accent"></span>
+              Social Media
+            </h2>
+            <div className="grid grid-cols-2 gap-4">
+              {socialLinks.map((social) => (
+                <ContactCard
+                  key={social.key}
+                  icon={social.icon}
+                  label={social.data.label_en}
+                  link={social.data.link}
+                  placeholder={social.data.placeholder}
+                />
+              ))}
+            </div>
+          </section>
+        </FadeIn>
 
-        <section>
-          <h2 className="text-xl font-bold text-primary mb-6 flex items-center gap-3">
-            <span className="w-8 h-0.5 bg-accent"></span>
-            Delivery Apps
-          </h2>
-          <div className="grid grid-cols-2 gap-4">
-            {deliveryApps.map((app) => (
-              <ContactCard
-                key={app.key}
-                icon="delivery"
-                label={app.data.label_en}
-                link={app.data.link}
-                placeholder={app.data.placeholder}
-              />
-            ))}
-          </div>
-        </section>
+        <FadeIn delay={100}>
+          <section>
+            <h2 className="text-xl font-bold text-primary mb-6 flex items-center gap-3">
+              <span className="w-8 h-0.5 bg-accent"></span>
+              Delivery Apps
+            </h2>
+            <div className="grid grid-cols-2 gap-4">
+              {deliveryApps.map((app) => (
+                <ContactCard
+                  key={app.key}
+                  icon="delivery"
+                  label={app.data.label_en}
+                  link={app.data.link}
+                  placeholder={app.data.placeholder}
+                />
+              ))}
+            </div>
+          </section>
+        </FadeIn>
       </main>
     </div>
   );

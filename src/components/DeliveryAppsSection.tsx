@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { Locale } from '@/lib/i18n';
+import FadeIn from '@/components/FadeIn';
 
 interface DeliveryAppsSectionProps {
   locale: Locale;
@@ -29,24 +30,27 @@ export default function DeliveryAppsSection({ locale }: DeliveryAppsSectionProps
     <section className="py-10 md:py-16 bg-bg">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-10">
-          <span className="text-lg sm:text-sm md:text-base font-ui tracking-wider text-accent">
-            {isRTL ? 'تطبيقات التوصيل' : 'Delivery Apps'}
-          </span>
-          <h2 className="text-[2rem] sm:text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
-            {isRTL ? 'طلبك يوصل لين بابك' : 'Delivery to your door'}
-          </h2>
-          <p className="text-muted mt-3 max-w-md mx-auto text-base sm:text-sm">
-            {isRTL 
-              ? 'خدمة التوصيل متاحة الآن عبر تطبيقات: هنقرستيشن، وكيتا.'
-              : 'Delivery is now available through: HungerStation and Keeta.'
-            }
-          </p>
-          <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
-        </div>
+        <FadeIn>
+          <div className="text-center mb-10">
+            <span className="text-lg sm:text-sm md:text-base font-ui tracking-wider text-accent">
+              {isRTL ? 'تطبيقات التوصيل' : 'Delivery Apps'}
+            </span>
+            <h2 className="text-[2rem] sm:text-2xl md:text-3xl font-mishafi font-bold text-primary mt-2">
+              {isRTL ? 'طلبك يوصل لين بابك' : 'Delivery to your door'}
+            </h2>
+            <p className="text-muted mt-3 max-w-md mx-auto text-base sm:text-sm">
+              {isRTL 
+                ? 'خدمة التوصيل متاحة الآن عبر تطبيقات: هنقرستيشن، وكيتا.'
+                : 'Delivery is now available through: HungerStation and Keeta.'
+              }
+            </p>
+            <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
+          </div>
+        </FadeIn>
 
         {/* App Cards */}
-        <div className="grid grid-cols-2 sm:flex sm:flex-row justify-center items-center gap-4 sm:gap-6 max-w-lg mx-auto">
+        <FadeIn delay={100}>
+          <div className="grid grid-cols-2 sm:flex sm:flex-row justify-center items-center gap-4 sm:gap-6 max-w-lg mx-auto">
           {deliveryApps.map((app) => (
             <div
               key={app.id}
@@ -68,8 +72,9 @@ export default function DeliveryAppsSection({ locale }: DeliveryAppsSectionProps
                 {isRTL ? app.name_ar : app.name_en}
               </p>
             </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </FadeIn>
       </div>
     </section>
   );

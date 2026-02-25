@@ -1,5 +1,8 @@
+'use client';
+
 import Header from '@/components/Header';
 import CoffeeCard from '@/components/CoffeeCard';
+import FadeIn from '@/components/FadeIn';
 import coffeeData from '@/data/coffee-beans.json';
 
 export default function CoffeePage() {
@@ -23,15 +26,17 @@ export default function CoffeePage() {
 
       {/* Coffee Grid */}
       <main className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {coffeeData.beans.map((bean) => (
-            <CoffeeCard
-              key={bean.id}
-              bean={bean}
-              locale={locale}
-            />
-          ))}
-        </div>
+        <FadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {coffeeData.beans.map((bean) => (
+              <CoffeeCard
+                key={bean.id}
+                bean={bean}
+                locale={locale}
+              />
+            ))}
+          </div>
+        </FadeIn>
       </main>
     </div>
   );

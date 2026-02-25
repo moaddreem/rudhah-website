@@ -1,4 +1,7 @@
+'use client';
+
 import Header from '@/components/Header';
+import FadeIn from '@/components/FadeIn';
 import siteData from '@/data/site.json';
 
 export default function ContactPage() {
@@ -26,12 +29,13 @@ export default function ContactPage() {
         </h1>
 
         {/* Social Media */}
-        <section className="mb-12">
-          <h2 className="text-xl font-bold text-primary mb-6 flex items-center gap-3">
-            <span className="w-8 h-0.5 bg-accent"></span>
-            وسائل التواصل
-          </h2>
-          <div className="grid grid-cols-2 gap-4">
+        <FadeIn>
+          <section className="mb-12">
+            <h2 className="text-xl font-bold text-primary mb-6 flex items-center gap-3">
+              <span className="w-8 h-0.5 bg-accent"></span>
+              وسائل التواصل
+            </h2>
+            <div className="grid grid-cols-2 gap-4">
             {socialLinks.map((social) => (
               <ContactCard
                 key={social.key}
@@ -42,26 +46,29 @@ export default function ContactPage() {
               />
             ))}
           </div>
-        </section>
+          </section>
+        </FadeIn>
 
         {/* Delivery Apps */}
-        <section>
-          <h2 className="text-xl font-bold text-primary mb-6 flex items-center gap-3">
-            <span className="w-8 h-0.5 bg-accent"></span>
-            تطبيقات التوصيل
-          </h2>
-          <div className="grid grid-cols-2 gap-4">
-            {deliveryApps.map((app) => (
-              <ContactCard
-                key={app.key}
-                icon="delivery"
-                label={locale === 'ar' ? app.data.label_ar : app.data.label_en}
-                link={app.data.link}
-                placeholder={app.data.placeholder}
-              />
-            ))}
-          </div>
-        </section>
+        <FadeIn delay={100}>
+          <section>
+            <h2 className="text-xl font-bold text-primary mb-6 flex items-center gap-3">
+              <span className="w-8 h-0.5 bg-accent"></span>
+              تطبيقات التوصيل
+            </h2>
+            <div className="grid grid-cols-2 gap-4">
+              {deliveryApps.map((app) => (
+                <ContactCard
+                  key={app.key}
+                  icon="delivery"
+                  label={locale === 'ar' ? app.data.label_ar : app.data.label_en}
+                  link={app.data.link}
+                  placeholder={app.data.placeholder}
+                />
+              ))}
+            </div>
+          </section>
+        </FadeIn>
       </main>
     </div>
   );
