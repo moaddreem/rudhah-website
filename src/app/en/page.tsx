@@ -165,11 +165,11 @@ export default function HomePageEN() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Logo locale={locale} size="md" variant="light" />
           <p className="text-accent mt-4 mb-6">A calm coffee experience in the heart of Abha</p>
-          <div className="flex flex-wrap justify-center gap-6 mb-8">
-            <Link href="/en/menu" className="text-bg/80 hover:text-accent transition-colors font-medium text-lg">Menu</Link>
-            <Link href="/en/coffee" className="text-bg/80 hover:text-accent transition-colors font-medium text-lg">Coffee</Link>
-            <Link href="/en/location" className="text-bg/80 hover:text-accent transition-colors font-medium text-lg">Location</Link>
-            <Link href="/en/contact" className="text-bg/80 hover:text-accent transition-colors font-medium text-lg">Contact</Link>
+          <div className="flex flex-wrap justify-center gap-8 sm:gap-10 mb-8">
+            <Link href="/en/menu" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">Menu</Link>
+            <Link href="/en/coffee" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">Coffee</Link>
+            <Link href="/en/location" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">Location</Link>
+            <Link href="/en/contact" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">Contact</Link>
           </div>
           <div className="w-24 h-px bg-bg/20 mx-auto mb-6"></div>
           <p className="text-bg/50 text-sm">© 2026 Rudhah. All rights reserved.</p>
