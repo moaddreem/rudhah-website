@@ -123,21 +123,21 @@ export default function HomePageEN() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
             </div>
-            <p className="text-xl md:text-2xl text-primary font-bold mb-2">
+            <p className="text-2xl md:text-3xl text-primary font-bold mb-2">
               {siteData.location.city_en} — {siteData.location.area_en}
             </p>
-            <p className="text-muted mb-6">{siteData.location.context_en}</p>
+            <p className="text-muted mb-6 text-lg">{siteData.location.context_en}</p>
             
             <div className="bg-cream rounded-lg p-4 mb-6">
-              <div className="flex justify-center gap-8 text-sm">
+              <div className="flex justify-center gap-8 text-base">
                 <div>
                   <p className="text-muted mb-1">{siteData.hours.weekdays.days_en}</p>
-                  <p className="text-primary font-bold">{siteData.hours.weekdays.open_en} - {siteData.hours.weekdays.close_en}</p>
+                  <p className="text-primary font-bold text-lg">{siteData.hours.weekdays.open_en} - {siteData.hours.weekdays.close_en}</p>
                 </div>
                 <div className="w-px bg-muted/30"></div>
                 <div>
                   <p className="text-muted mb-1">{siteData.hours.friday.day_en}</p>
-                  <p className="text-primary font-bold">{siteData.hours.friday.open_en} - {siteData.hours.friday.close_en}</p>
+                  <p className="text-primary font-bold text-lg">{siteData.hours.friday.open_en} - {siteData.hours.friday.close_en}</p>
                 </div>
               </div>
             </div>
