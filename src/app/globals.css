@@ -13,13 +13,35 @@
   --scroll-offset: calc(var(--header-h) + var(--tabs-h) + 16px);
 }
 
-/* Mishafi Gold Regular - Arabic display/headings */
+/* Lateef - Arabic font from Google Fonts */
 @font-face {
-  font-family: 'Mishafi Gold Regular';
-  src: url('/fonts/mishafi.woff2') format('woff2'),
-       url('/fonts/mishafi.woff') format('woff'),
-       url('/fonts/mishafi-gold-regular.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Lateef';
+  src: url('/fonts/Lateef/Lateef-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lateef';
+  src: url('/fonts/Lateef/Lateef-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lateef';
+  src: url('/fonts/Lateef/Lateef-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lateef';
+  src: url('/fonts/Lateef/Lateef-Bold.ttf') format('truetype');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -52,21 +74,6 @@
 
 /* Mobile-specific text rendering fixes */
 @media (max-width: 767px) {
-  /* Use Mishafi Gold with Google Arabic fonts as fallback */
-  body,
-  h1, h2, h3, h4, h5, h6,
-  p, span, a, button, input, select, textarea,
-  .font-arabic,
-  .font-ui,
-  .font-mishafi,
-  [lang="ar"] {
-    font-family: 'Mishafi Gold Regular', 'Amiri', 'Tajawal', 'Geeza Pro', -apple-system, sans-serif !important;
-    /* Enable Arabic ligatures and proper text shaping */
-    font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
-    -webkit-font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
-    text-rendering: optimizeLegibility;
-  }
-  
   /* Ensure proper Arabic text shaping on mobile */
   html {
     -webkit-text-size-adjust: 100%;
@@ -120,7 +127,7 @@ html, body {
 }
 
 body {
-  font-family: 'Mishafi Gold Regular', 'Geeza Pro', 'Noto Naskh Arabic', 'Tahoma', sans-serif;
+  font-family: 'Lateef', 'Geeza Pro', 'Noto Naskh Arabic', 'Tahoma', sans-serif;
   background-color: var(--bg);
   color: var(--primary);
   line-height: 1.8;
