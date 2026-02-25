@@ -33,29 +33,17 @@
     }
   },
   "contact": {
-    "whatsapp": {
-      "label_ar": "واتساب",
-      "label_en": "WhatsApp",
-      "link": null,
-      "placeholder": true
-    },
     "instagram": {
       "label_ar": "انستغرام",
       "label_en": "Instagram",
-      "link": null,
-      "placeholder": true
-    },
-    "snapchat": {
-      "label_ar": "سناب شات",
-      "label_en": "Snapchat",
-      "link": null,
-      "placeholder": true
+      "link": "https://www.instagram.com/rudhah.abh",
+      "placeholder": false
     },
     "tiktok": {
       "label_ar": "تيك توك",
       "label_en": "TikTok",
-      "link": null,
-      "placeholder": true
+      "link": "https://www.tiktok.com/@rudhah.abh",
+      "placeholder": false
     }
   },
   "delivery": {

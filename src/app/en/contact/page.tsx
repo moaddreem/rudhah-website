@@ -8,9 +8,7 @@ export default function ContactPageEN() {
   const locale = 'en';
 
   const socialLinks = [
-    { key: 'whatsapp', icon: 'whatsapp', data: siteData.contact.whatsapp },
     { key: 'instagram', icon: 'instagram', data: siteData.contact.instagram },
-    { key: 'snapchat', icon: 'snapchat', data: siteData.contact.snapchat },
     { key: 'tiktok', icon: 'tiktok', data: siteData.contact.tiktok },
   ];
 
@@ -24,15 +22,16 @@ export default function ContactPageEN() {
       <Header locale={locale} />
 
       <main className="px-4 py-12 max-w-2xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-mishafi font-bold text-primary text-center mb-12">
-          Contact Us
+        <h1 className="text-3xl md:text-4xl font-mishafi font-bold text-primary text-center mb-4">
+          Social Media
         </h1>
+        <p className="text-center text-muted mb-12">Share your beautiful moments with us!</p>
 
         <FadeIn>
           <section className="mb-12">
             <h2 className="text-xl font-bold text-primary mb-6 flex items-center gap-3">
               <span className="w-8 h-0.5 bg-accent"></span>
-              Social Media
+              Follow Us
             </h2>
             <div className="grid grid-cols-2 gap-4">
               {socialLinks.map((social) => (
@@ -62,6 +61,7 @@ export default function ContactPageEN() {
                   label={app.data.label_en}
                   link={app.data.link}
                   placeholder={app.data.placeholder}
+                  isDelivery={true}
                 />
               ))}
             </div>
@@ -77,18 +77,19 @@ interface ContactCardProps {
   label: string;
   link: string | null;
   placeholder: boolean;
+  isDelivery?: boolean;
 }
 
-function ContactCard({ icon, label, link, placeholder }: ContactCardProps) {
+function ContactCard({ icon, label, link, placeholder, isDelivery = false }: ContactCardProps) {
   const content = (
-    <div className={`card p-6 text-center transition-all duration-200 ${placeholder ? 'opacity-60' : 'hover:scale-[1.02]'}`}>
+    <div className={`card p-6 text-center transition-all duration-200 ${placeholder && !isDelivery ? 'opacity-60' : 'hover:scale-[1.02]'}`}>
       <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-accent/20 flex items-center justify-center">
         <ContactIcon type={icon} />
       </div>
       <p className="font-medium text-primary">{label}</p>
-      {placeholder && (
-        <span className="inline-block mt-2 text-xs text-muted bg-muted/20 px-2 py-1 rounded-full">
-          Coming Soon
+      {isDelivery && (
+        <span className="inline-block mt-2 text-xs text-accent bg-accent/10 px-2 py-1 rounded-full">
+          Available Now
         </span>
       )}
     </div>
