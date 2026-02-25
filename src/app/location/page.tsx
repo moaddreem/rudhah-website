@@ -77,7 +77,7 @@ export default function LocationPage() {
 
         {/* Location Photo */}
         <div className="mt-8 rounded-xl overflow-hidden shadow-sm max-w-2xl mx-auto">
-          <div className="relative aspect-video">
+          <div className="relative aspect-square">
             <Image
               src="/images/loca.jpg"
               alt="موقع ردهه"

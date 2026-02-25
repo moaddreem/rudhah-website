@@ -64,7 +64,7 @@ export default function LocationPageEN() {
         </div>
 
         <div className="mt-8 card overflow-hidden">
-          <div className="relative aspect-video">
+          <div className="relative aspect-square">
             <Image
               src="/images/loca.jpg"
               alt="Rudhah Location"
