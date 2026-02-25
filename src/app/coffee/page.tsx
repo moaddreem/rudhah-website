@@ -28,17 +28,20 @@ export default function CoffeePage() {
       <main className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <FadeIn>
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-            {coffeeData.beans.map((bean, index) => (
-              <div 
-                key={bean.id}
-                className={coffeeData.beans.length % 2 !== 0 && index === coffeeData.beans.length - 1 ? 'col-span-2 md:col-span-1 flex justify-center' : ''}
-              >
-                <CoffeeCard
-                  bean={bean}
-                  locale={locale}
-                />
-              </div>
-            ))}
+            {coffeeData.beans.map((bean, index) => {
+              const isLastOdd = coffeeData.beans.length % 2 !== 0 && index === coffeeData.beans.length - 1;
+              return (
+                <div 
+                  key={bean.id}
+                  className={isLastOdd ? 'col-span-2 md:col-span-1 justify-self-center w-[calc((100%-12px)/2)] sm:w-[calc((100%-16px)/2)] md:w-full' : ''}
+                >
+                  <CoffeeCard
+                    bean={bean}
+                    locale={locale}
+                  />
+                </div>
+              );
+            })}
           </div>
         </FadeIn>
       </main>
