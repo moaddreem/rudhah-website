@@ -11,7 +11,9 @@ import siteData from '@/data/site.json';
 
 export default function HomePage() {
   const locale = 'ar';
-  const sweets = menuData.categories.find(c => c.id === 'sweets')?.items.slice(0, 6) || [];
+  const featuredSweetNames = ['بيكان ردهه', 'ليمون تويست', 'ترافل مانجو', 'كرانشي تشوكلت'];
+  const allSweets = menuData.categories.find(c => c.id === 'sweets')?.items || [];
+  const sweets = allSweets.filter(item => featuredSweetNames.includes(item.name_ar));
 
   return (
     <div className="min-h-screen" dir="rtl">
