@@ -70,7 +70,7 @@ export default function HomePageEN() {
               <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
             </div>
           </FadeIn>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5">
+          <div className="grid grid-cols-2 gap-3 sm:gap-5 max-w-2xl mx-auto">
             {sweets.map((item, index) => (
               <div key={index} className="bg-bg rounded-xl p-4 sm:p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                 <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-primary/10 to-accent/20 flex items-center justify-center">
