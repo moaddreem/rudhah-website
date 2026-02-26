@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <head>
-        <link rel="icon" href="/images/logofortheseach.svg" type="image/svg+xml" />
+        <link rel="icon" href="/images/logo_smooth.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/images/logo.webp" />
         <meta name="theme-color" content="#590D1A" />
         <link rel="preload" href="/fonts/Lateef/Lateef-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
