@@ -48,12 +48,12 @@
       "category_ar": "الحلويات",
       "category_en": "SWEETS",
       "items": [
-        { "name_ar": "بيكان ردهه", "name_en": "Pecan Rudhah", "price": 26, "calories": 420 },
-        { "name_ar": "كرامبل تشوكلت", "name_en": "Crumble Chocolate", "price": 26, "calories": 520 },
+        { "name_ar": "بيكان رُدهه", "name_en": "Pecan Rudhah", "price": 26, "calories": 420 },
+        { "name_ar": "ديلوتشي رُدهه", "name_en": "D'lotechi Rudhah", "price": 26, "calories": 280 },
         { "name_ar": "ليمون تويست", "name_en": "Lemon Twist", "price": 24, "calories": 380 },
-        { "name_ar": "ترافل مانجو", "name_en": "Mango Truffle", "price": 25, "calories": 450 },
-        { "name_ar": "تيراميسو بيكان", "name_en": "Tiramisu Pecan", "price": 25, "calories": 390 },
-        { "name_ar": "كرانشي تشوكلت", "name_en": "Crunchy Chocolate", "price": 25, "calories": 450 }
+        { "name_ar": "كرانشي تشوكلت", "name_en": "Crunchy Chocolate", "price": 25, "calories": 450 },
+        { "name_ar": "كوكنت توت و مانجو", "name_en": "Coconut Berry & Mango", "price": 24, "calories": 380 },
+        { "name_ar": "ترافل مانجو", "name_en": "Mango Truffle", "price": 25, "calories": 450 }
       ]
     },
     {
