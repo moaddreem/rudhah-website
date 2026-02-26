@@ -11,7 +11,7 @@ import siteData from '@/data/site.json';
 
 export default function HomePageEN() {
   const locale = 'en';
-  const featuredSweetNames = ['Pecan Rudhah', 'Lemon Twist', 'Mango Truffle', 'Crunchy Chocolate'];
+  const featuredSweetNames = ['Pecan Rudhah', 'Coconut Berry & Mango', 'Mango Truffle', 'Crunchy Chocolate'];
   const allSweets = menuData.categories.find(c => c.id === 'sweets')?.items || [];
   const sweets = allSweets.filter(item => featuredSweetNames.includes(item.name_en));
 
