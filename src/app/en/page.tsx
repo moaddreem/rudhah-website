@@ -190,6 +190,17 @@ export default function HomePageEN() {
           </div>
           <div className="w-24 h-px bg-bg/20 mx-auto mb-6"></div>
           <p className="text-bg/50 text-sm">© 2026 Rudhah. All rights reserved.</p>
+          <p className="text-bg/60 text-sm mt-4">
+            Designed & Developed by{' '}
+            <a 
+              href="https://duraym.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-accent hover:text-accent/80 font-bold underline underline-offset-2 transition-colors"
+            >
+              duraym.com
+            </a>
+          </p>
         </div>
       </footer>
     </div>

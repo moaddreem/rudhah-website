@@ -11,6 +11,14 @@ export const metadata: Metadata = {
     locale: 'ar_SA',
     alternateLocale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/images/logo_smooth.png',
+        width: 400,
+        height: 400,
+        alt: 'Rudhah Cafe Logo',
+      },
+    ],
   },
 };
 
