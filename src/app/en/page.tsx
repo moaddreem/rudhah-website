@@ -189,8 +189,7 @@ export default function HomePageEN() {
             <Link href="/en/contact" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">Our Accounts</Link>
           </div>
           <div className="w-24 h-px bg-bg/20 mx-auto mb-6"></div>
-          <p className="text-bg/50 text-sm">© 2026 Rudhah. All rights reserved.</p>
-          <p className="text-bg/60 text-sm mt-4">
+          <p className="text-bg/60 text-sm">
             Designed & Developed by{' '}
             <a 
               href="https://duraym.com" 
@@ -201,6 +200,7 @@ export default function HomePageEN() {
               duraym.com
             </a>
           </p>
+          <p className="text-bg/50 text-sm mt-4">© 2026 Rudhah. All rights reserved.</p>
         </div>
       </footer>
     </div>

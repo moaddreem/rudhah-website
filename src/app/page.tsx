@@ -189,8 +189,7 @@ export default function HomePage() {
             <Link href="/contact" className="text-bg/80 hover:text-accent transition-colors font-medium text-xl">حساباتنا</Link>
           </div>
           <div className="w-24 h-px bg-bg/20 mx-auto mb-6"></div>
-          <p className="text-bg/50 text-sm">© 2026 ردهه. جميع الحقوق محفوظة.</p>
-          <p className="text-bg/60 text-sm mt-4">
+          <p className="text-bg/60 text-sm">
             تم تصميم وتطوير الموقع من قبل{' '}
             <a 
               href="https://duraym.com" 
@@ -201,6 +200,7 @@ export default function HomePage() {
               duraym.com
             </a>
           </p>
+          <p className="text-bg/50 text-sm mt-4">© 2026 ردهه. جميع الحقوق محفوظة.</p>
         </div>
       </footer>
     </div>
